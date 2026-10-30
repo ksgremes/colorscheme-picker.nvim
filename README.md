@@ -2,6 +2,12 @@
 
 Colorscheme Picker For NeoVim
 
+This repo is a fork of [This neovim plugin](https://github.com/runih/colorscheme-picker.nvim),
+with a small added functionality to allow for default light and dark colorschemes.
+
+The remainder of this `readme` is an exact copy, except for `default_dark_colorscheme`
+and `default_light_colorscheme` options in setup function
+
 ![colorscheme-picker](https://github.com/runih/colorscheme-picker.nvim/assets/17590245/2a9a251a-0448-45a2-9ec2-d28b471e93ff)
 
 ## Requirements
@@ -29,6 +35,8 @@ return {
     colorscheme.setup({
       default_colorscheme = "bamboo",
       keymapping = "<leader>cs",
+      default_light_colorscheme = "zenbones",
+      default_dark_colorscheme = "habamax",
       default_colorscheme_keymapping = "<leader>CD"
     })
     colorscheme.set_default_colorscheme()
